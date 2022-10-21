@@ -1,4 +1,6 @@
-
+/*
+Date with Ordinal Numbers (st, nd, rd and th).
+*/
 SELECT
     FORMAT(SOH.[OrderDate],'d'
         + IIF(DAY(SOH.[OrderDate]) IN (1,21,31),'''st'''
